@@ -1,6 +1,7 @@
 const Joi = require("joi");
 
 const dataValidator = (data) => {
+  console.log(data);
   const schema = Joi.object({
     filename: Joi.string().required(),
     content: Joi.string().required(),
